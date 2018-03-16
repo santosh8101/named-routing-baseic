@@ -1,0 +1,13 @@
+<p>
+  shared works!
+</p>
+<ul>
+  <li><a [routerLink] = "['one']">one</a></li>
+  <li><a routerLink = 'two'>two</a></li>
+  <li><a [routerLink] = "[{ outlets: {threeoutlet: 'threepath'}}]">open three</a></li>
+  <li><a [routerLink] = "[{ outlets: {threeoutlet: null }}]">close three</a></li>
+
+
+</ul>
+<router-outlet></router-outlet>
+<router-outlet name = "threeoutlet"></router-outlet>
